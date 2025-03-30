@@ -17,6 +17,11 @@ body {
     cursor: default;
 }
 
+button, a {
+    touch-action: manipulation;
+}
+
+
 /* Header and Navigation */
 .header {
     background: #1e1e1e;
@@ -125,6 +130,14 @@ ul li:hover {
     color: #ddd;
 }
 
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.buttons a{
+    text-decoration: none;
+}
 .contact-btn {
     display: block;
     width: max-content;
@@ -145,6 +158,95 @@ ul li:hover {
 }
 
 /* About me section */
+.section-divider {
+    border: 0;
+    height: 1px;
+    background: #444;
+    margin: 20px 0;
+}
+
+.subtitle {
+    font-size: 1.3em;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.bio {
+    font-size: 1.1em;
+    color: #ddd;
+}
+
+
+/* Alternating Sections */
+.about-section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    background: #1e1e1e;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+}
+
+.about-section h2 {
+    font-size: 1.8em;
+    color: #ffcc00;
+    /* text-align: center;
+    width: 100%; */
+}
+
+.about-section p, .about-section ul {
+    flex: 1;
+    font-size: 1em;
+}
+
+.about-center {
+
+    text-align: center;
+    padding: 30px;
+    background: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    margin-bottom: 30px;
+}
+
+.about-center h2 {
+    font-size: 2em;
+    color: #ffcc00;
+}
+.about-center i {
+    text-align: center;
+    font-size: 2em;
+    color: #ffcc00;
+}
+
+.about-center h3 {
+    font-size: 2em;
+    color: #ffcc00;
+}
+
+.about-section.left {
+    flex-direction: row;
+    text-align: left;
+}
+
+.about-section.right {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.about-content h2, .about-content h3 {
+    align-items: center;
+    gap: 10px;
+}
+
+.about-content i {
+    color: #ffcc00;
+    font-size: 1.3em;
+    margin: 15px 10px;
+}
+
+
 .certifications-list {
     display: flex;
     flex-wrap: wrap;
@@ -228,10 +330,12 @@ ul li:hover {
 
 .project-iframe {
     width: 100%;
-    height: 180px;
-    border-radius: 5px;
-    border: 1px solid #444;
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
 }
+
 
 .project-title {
     font-size: 1.2em;
@@ -316,6 +420,7 @@ ul li:hover {
 
 .back-to-top:hover {
     transform: scale(1.1);
+    background: #ffaa00;
 }
 
 

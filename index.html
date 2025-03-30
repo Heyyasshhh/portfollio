@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
     <a id="top"></a>
     <header class="header">
@@ -23,50 +25,77 @@
     <p class="greeting-message">Welcome to My Portfolio! 🚀</p>
 
     <section id="home" class="container my-5 text-center profile-card">
-      <h2>Yash Haldankar</h2>
-      <p class="subtitle">Tech Enthusiast | Learning Full Stack Development</p>
-      <p class="bio">Passionate about technology and innovation, I am currently learning full stack development while exploring AI. I strive to build creative and efficient solutions that make an impact.</p>
-      <button class="contact-btn" onclick="location.href='#contact'">Contact Me</button>
+        <h2>Yash Haldankar</h2>
+        <p class="subtitle">Tech Enthusiast | Learning Full Stack Development</p>
+        <p class="bio">Passionate about technology and innovation, I am currently learning full stack development while
+            exploring AI. I strive to build creative and efficient solutions that make an impact.</p>
+        <div class="buttons">
+        <button class="contact-btn" onclick="location.href='#contact'">Contact Me</button>
+        <a href="https://drive.google.com/file/d/1e53gWUZJ_QhgMtlEWSxeO4SGQY_7ank5/view?usp=sharing" target="_blank" class="contact-btn" download>Resume</a>
+        </div>
     </section>
 
-    <section id="about" class="container">
-        <div class="profile-card">
-            <h2>About Me</h2>
-            <p class="subtitle">Full Stack Developer & Freelancer</p>
-            <p class="bio">Hi, I'm <strong>Yash Subhash Haldankar</strong>, a passionate Full Stack Developer with expertise in front-end and back-end technologies. I have experience in HTML, CSS, SQL, Python, Bootstrap, and Java, and I specialize in building responsive, high-performance web applications.</p>
-            
-            <h3>Education</h3>
-            <ul>
-                <li>Pursuing BCA (Bachelor of Computer Applications) - Thakur Polytechnic (Present)</li>
-            </ul>
-            
-            <h3>Certifications</h3>
-            <div class="certifications-list">
-                <span class="badge">Master in Full Stack Development - IT Vedant</span>
-                <span class="badge">Artificial Intelligence using Python</span>
-                <span class="badge">Data Science using Python</span>
-                <span class="badge">Python Fundamentals by GreatLearning</span>
+    <section id="about" class="container about-container">
+        <div class="about-content">
+            <div class="about-center">
+            <h2><i class='bx bx-user'></i> Who I Am</h2>
+                <p class="subtitle">Full Stack Developer & Freelancer</p>
+                <p class="bio">Hi, I'm Yash Subhash Haldankar, a passionate Full Stack Developer with expertise in
+                    front-end and back-end technologies. I have experience in HTML, CSS, SQL, Python, Bootstrap, and
+                    Java, and I specialize in building responsive, high-performance web applications.</p>
             </div>
-            
-            <h3>Skills</h3>
-            <div class="skills">
-                <span class="skill"><i class='bx bxl-html5 bx-sm'></i>HTML</span>
-                <span class="skill"><i class='bx bxl-css3 bx-sm'></i>CSS</span>
-                <span class="skill"><i class='bx bxs-data bx-sm'></i>SQL</span>
-                <span class="skill"><i class='bx bxl-python bx-sm'></i>Python</span>
-                <span class="skill"><i class='bx bxl-bootstrap bx-sm'></i>Bootstrap</span>
-                <span class="skill"><i class='bx bxl-java bx-sm'></i>Java</span>
-                <span class="skill"><i class='bx bxl-git bx-sm'></i>Git</span>
-            </div>
-            
-            <h3>Projects</h3>
-            <ul>
-                <li>Gym Attendance Management System - Developed a complete gym management application from scratch.</li>
-                <li>Portfolio Website - Designed and developed a unique, highly interactive personal portfolio.</li>
-            </ul>
 
-            <h3>Career Goals</h3>
-            <p>My goal is to secure a job after graduation and continue growing as a Full Stack Developer while working on innovative projects. I am always open to learning new technologies and improving my skills.</p>
+            <hr class="section-divider"> <!-- Section Divider -->
+            <div class="about-section left">
+                <h3 style="margin-right: 20px;"><i class='bx bx-book'></i> Education</h3>
+                <ul>
+                    <li style="text-align: center;"><i class='bx bx-graduation'></i>BCA (Bachelor of Computer Applications) - Thakur Polytechnic (Present)</li>
+                </ul>
+            </div>
+
+            <hr class="section-divider"> <!-- Section Divider -->
+            <div class="about-section right">
+                <h3><i class='bx bx-certification'></i> Certifications</h3>
+                <div class="certifications-list">
+                    <span class="badge"><i class='bx bx-check-circle'></i> Full Stack Development Master’s Program - IT
+                        Vedant (ongoing)</span>
+                    <span class="badge"><i class='bx bx-check-circle'></i> Artificial Intelligence using Python</span>
+                    <span class="badge"><i class='bx bx-check-circle'></i> Data Science using Python</span>
+                    <span class="badge"><i class='bx bx-check-circle'></i> Python Fundamentals by GreatLearning</span>
+                </div>
+            </div>
+
+            <hr class="section-divider left"> <!-- Section Divider -->
+            <div class="about-section">
+                <h3><i class='bx bx-code-alt'></i> Skills</h3>
+                <div class="skills">
+                    <span class="skill"><i class='bx bxl-html5'></i> HTML</span>
+                    <span class="skill"><i class='bx bxl-css3'></i> CSS</span>
+                    <span class="skill"><i class='bx bxs-data'></i> SQL</span>
+                    <span class="skill"><i class='bx bxl-python'></i> Python</span>
+                    <span class="skill"><i class='bx bxl-bootstrap'></i> Bootstrap</span>
+                    <span class="skill"><i class='bx bxl-java'></i> Java</span>
+                    <span class="skill"><i class='bx bxl-git'></i> Git</span>
+                </div>
+            </div>
+
+            <hr class="section-divider"> <!-- Section Divider -->
+            <div class="about-section right center-heading">
+                <h3><i class='bx bx-briefcase'></i> Projects</h3>
+                <ul>
+                    <li style="text-align: center;"><i class='bx bx-check'></i> <b>Gym Attendance Management System</b> <p>Developed a complete gym
+                        management application from scratch.</p></li>
+                    <li style="text-align: center;"><i class='bx bx-check'></i> <b>Portfolio Website</b>  <p>Designed and developed a unique, highly interactive personal portfolio.</p></li>
+                </ul>
+            </div>
+
+            <hr class="section-divider"> <!-- Section Divider -->
+            <div class="about-center">
+                <h3><i class='bx bx-bullseye'></i> Career Goals</h3>
+                <p><i class='bx bx-rocket'></i> My goal is to secure a job after graduation and continue growing as a
+                    Full Stack Developer while working on innovative projects. I am always open to learning new
+                    technologies and improving my skills.</p>
+            </div>
         </div>
     </section>
 
@@ -77,7 +106,8 @@
                 <div class="project-card">
                     <iframe src="https://heyyasshhh.github.io/Fitness-Hub/" class="project-iframe"></iframe>
                     <h4 class="project-title">Gym Attendance Management System</h4>
-                    <a href="https://heyyasshhh.github.io/Fitness-Hub/" target="_blank" class="open-project-btn">View Project</a>
+                    <a href="https://heyyasshhh.github.io/Fitness-Hub/" target="_blank" class="open-project-btn">View
+                        Project</a>
                 </div>
             </div>
         </div>
@@ -87,11 +117,14 @@
         <h2>Contact Me</h2>
         <p>Let's connect! Feel free to reach out via the platforms below.</p>
         <div class="social-links">
-            <a href="https://www.linkedin.com/in/heyyasshh/" target="_blank" class="social-btn linkedin"><i class='bx bxl-linkedin'></i> LinkedIn</a>
+            <a href="https://www.linkedin.com/in/heyyasshh/" target="_blank" class="social-btn linkedin"><i
+                    class='bx bxl-linkedin'></i> LinkedIn</a>
             <a href="mailto:yashhaldankar02@gmail.com" class="social-btn gmail"><i class='bx bxl-gmail'></i> Gmail</a>
-            <a href="https://github.com/Heyyasshhh" target="_blank" class="social-btn github"><i class='bx bxl-github'></i> GitHub</a>
+            <a href="https://github.com/Heyyasshhh" target="_blank" class="social-btn github"><i
+                    class='bx bxl-github'></i> GitHub</a>
         </div>
     </section>
     <a href="#top" class="back-to-top">↑</a>
 </body>
+
 </html>
