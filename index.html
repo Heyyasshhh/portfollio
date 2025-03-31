@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Yash Haldankar's Portfolio</title>
 
-    <link rel="stylesheet" href="bootstrap.min.css"> <!-- Using local Bootstrap -->
+    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsiveness.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
     <a id="top"></a>
     <header class="header">
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
         <nav class="navbar">
-            <a href="#home" class="nav-btn">HOME</a>
-            <a href="#about" class="nav-btn">About Me</a>
-            <a href="#projects" class="nav-btn">Projects</a>
-            <a href="#contact" class="nav-btn">Contact</a>
+            <a href="#home" class="nav-btn" onclick="closeMenu()">Home</a>
+            <a href="#about" class="nav-btn" onclick="closeMenu()">About Me</a>
+            <a href="#projects" class="nav-btn" onclick="closeMenu()">Projects</a>
+            <a href="#contact" class="nav-btn" onclick="closeMenu()">Contact</a>
         </nav>
     </header>
 
@@ -69,13 +71,13 @@
             <div class="about-section">
                 <h3><i class='bx bx-code-alt'></i> Skills</h3>
                 <div class="skills">
-                    <span class="skill"><i class='bx bxl-html5'></i> HTML</span>
-                    <span class="skill"><i class='bx bxl-css3'></i> CSS</span>
-                    <span class="skill"><i class='bx bxs-data'></i> SQL</span>
-                    <span class="skill"><i class='bx bxl-python'></i> Python</span>
-                    <span class="skill"><i class='bx bxl-bootstrap'></i> Bootstrap</span>
-                    <span class="skill"><i class='bx bxl-java'></i> Java</span>
-                    <span class="skill"><i class='bx bxl-git'></i> Git</span>
+                    <span class="skill"><i class='bx bxl-html5 bx-sm'></i> HTML</span>
+                    <span class="skill"><i class='bx bxl-css3 bx-sm'></i> CSS</span>
+                    <span class="skill"><i class='bx bxs-data bx-sm'></i> SQL</span>
+                    <span class="skill"><i class='bx bxl-python bx-sm'></i> Python</span>
+                    <span class="skill"><i class='bx bxl-bootstrap bx-sm'></i> Bootstrap</span>
+                    <span class="skill"><i class='bx bxl-java bx-sm'></i> Java</span>
+                    <span class="skill"><i class='bx bxl-git bx-sm'></i> Git</span>
                 </div>
             </div>
 
@@ -125,6 +127,17 @@
         </div>
     </section>
     <a href="#top" class="back-to-top">↑</a>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".navbar").classList.toggle("active");
+        }
+
+        function closeMenu() {
+        const navbar = document.querySelector(".navbar");
+        navbar.classList.remove("active");
+    }
+    </script>
 </body>
 
 </html>
